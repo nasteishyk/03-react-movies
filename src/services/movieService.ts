@@ -14,7 +14,6 @@ export const handleFetch = async (query: string): Promise<Movie[]> => {
     "https://api.themoviedb.org/3/search/movie",
     {
       params: {
-        api_key: import.meta.env.VITE_TMDB_API_KEY,
         query: query,
       },
       headers: {
